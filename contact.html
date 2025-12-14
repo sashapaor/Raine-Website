@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raine's Camera and Films - Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Raine's Films</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 contact-main-card">
+        
+        <div class="row">
+            <div class="col-lg-5 mb-4 contact-left-side">
+                <h1 class="text-danger mb-4">Start capturing with us.</h1>
+                <div class="text-center">
+                    <img src="assets/raineProfile.jpg" alt="Raine" class="img-fluid rounded-circle mb-4 contact-profile-img">
+                </div>
+                <div class="contact-details-box text-start">
+                    <p class="mb-1">Email: <a href="mailto:shana.rainepaor@gmail.com">shana.rainepaor@gmail.com</a></p>
+                    <p>Phone: <a href="tel:09924192004">09924192004</a></p>
+                    <p class="small mt-5 contact-disclaimer">After sending us your order, we will directly contact you via email for other personal informations and the confirmation of your purchase, thank you.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-7 contact-right-side p-4">
+                <form id="orderForm" novalidate>
+                    <h2 class="d-none">Place Your Order</h2>
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Your Full Name</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Shana Raine A. Paor" required>
+                        <div class="invalid-feedback">Please enter your full name.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailAddress" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="emailAddress" placeholder="shana.example@gmail.com" required>
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="orderMessage" class="form-label">Order/s</label>
+                        <textarea class="form-control" id="orderMessage" rows="4" placeholder="Canon EOS 700D (2 days)" required></textarea>
+                        <div class="invalid-feedback">Please specify your order/message.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 mt-4" id="submitBtn">Send Order</button>
+                    <p id="message-output" class="mt-3 text-center"></p>
+                </form>
+            </div>
+        </div>
+        <p class="contact-footer-text text-center mt-3">&copy; 2025 Raine's Camera and Films. All rights reserved.</p>
+    </main>
+    
+    <footer class="bg-dark text-white text-center py-3 d-none">
+        &copy; 2025 Raine's Camera and Films. All rights reserved.
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
